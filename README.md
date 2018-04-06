@@ -53,20 +53,15 @@ public class ItemType
 ```C#
 public partial class ItemDetial : ContentPage
 {
-	public ItemDetial()
-	{
-		InitializeComponent();
-  }
-
   protected async override void OnAppearing()
   {
     base.OnAppearing();
     BindingContext = new Item();
     lpType.ItemsSource = new [] {
-      new ItemType() { Id = null, TypeName = "" },
-      new ItemType() { Id = 1, TypeName = "Type 1" },
-      new ItemType() { Id = 2, TypeName = "Type 2" },
-      new ItemType() { Id = 3, TypeName = "Type 3" },
+      new ItemType() { TypeId = null, TypeName = "" },
+      new ItemType() { TypeId = 1, TypeName = "Type 1" },
+      new ItemType() { TypeId = 2, TypeName = "Type 2" },
+      new ItemType() { TypeId = 3, TypeName = "Type 3" },
     };
   }
 ```
