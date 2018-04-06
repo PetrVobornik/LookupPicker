@@ -8,7 +8,7 @@ Add a copy of the file LookupPicker.cs into your project (common part). You can 
 
 ## Usage
 
-For editing of these two clases...
+**Data classes**
 
 ```C#
 public class Item
@@ -35,7 +35,7 @@ public class ItemType
              xmlns:lp="clr-namespace:Amporis.Xamarin.Forms.LookupPicker"
              x:Class="LookupPickerSample.ItemDetial">
     <ContentPage.Content>
-        <StackLayout Margin="20">
+        <StackLayout>
             <Label Text="Name" />
             <Entry Text="{Binding Name}" Margin="0,2,0,10" />
             <Label Text="Type" />
