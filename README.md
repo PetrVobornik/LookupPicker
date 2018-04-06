@@ -64,5 +64,6 @@ public partial class ItemDetial : ContentPage
       new ItemType() { TypeId = 3, TypeName = "Type 3" },
     };
   }
+}
 ```
 
