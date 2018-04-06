@@ -20,7 +20,7 @@ public class Item
 
 public class ItemType
 {
-    public int TypeId { get; set; }
+    public int? TypeId { get; set; }
     public string TypeName { get; set; }
 }
 ```
@@ -58,7 +58,7 @@ public partial class ItemDetial : ContentPage
     base.OnAppearing();
     BindingContext = new Item();
     lpType.ItemsSource = new [] {
-      new ItemType() { TypeId = null, TypeName = "" },
+      new ItemType() { TypeId = null, TypeName = "" },    // optional first empty item
       new ItemType() { TypeId = 1, TypeName = "Type 1" },
       new ItemType() { TypeId = 2, TypeName = "Type 2" },
       new ItemType() { TypeId = 3, TypeName = "Type 3" },
