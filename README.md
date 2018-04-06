@@ -20,7 +20,7 @@ public class Item
 
 public class ItemType
 {
-    public int? TypeId { get; set; }
+    public int? IdType { get; set; }
     public string TypeName { get; set; }
 }
 ```
@@ -41,7 +41,7 @@ public class ItemType
             <Label Text="Type" />
             <lp:LookupPicker x:Name="lpType" Margin="0,2,0,10" 
                              ItemDisplayBinding="{Binding TypeName}" 
-                             ItemIdProperty="TypeId" ID="{Binding TypeId}" />
+                             ItemIdProperty="IdType" ID="{Binding TypeId}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
@@ -58,10 +58,10 @@ public partial class ItemDetial : ContentPage
     base.OnAppearing();
     BindingContext = new Item();
     lpType.ItemsSource = new [] {
-      new ItemType() { TypeId = null, TypeName = "" },    // optional first empty item
-      new ItemType() { TypeId = 1, TypeName = "Type 1" },
-      new ItemType() { TypeId = 2, TypeName = "Type 2" },
-      new ItemType() { TypeId = 3, TypeName = "Type 3" },
+      new ItemType() { IdType = null, TypeName = "" },    // optional first empty item
+      new ItemType() { IdType = 1, TypeName = "Type 1" },
+      new ItemType() { IdType = 2, TypeName = "Type 2" },
+      new ItemType() { IdType = 3, TypeName = "Type 3" },
     };
   }
 }
