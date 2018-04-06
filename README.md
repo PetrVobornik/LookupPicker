@@ -8,26 +8,7 @@ Add a copy of the file LookupPicker.cs into your project (common part). You can 
 
 ## Usage
 
-```xaml
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:lp="clr-namespace:Amporis.Xamarin.Forms.LookupPicker"
-             x:Class="LookupPickerSample.ItemDetial">
-    <ContentPage.Content>
-        <StackLayout Margin="20">
-            <Label Text="Name" />
-            <Entry Text="{Binding Name}" Margin="0,2,0,10" />
-            <Label Text="Type" />
-            <lp:LookupPicker x:Name="lpType" Margin="0,2,0,10" 
-                             ItemDisplayBinding="{Binding TypeName}" ItemIdProperty="TypeId"
-                             ID="{Binding TypeId}"/>
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
-```
-
-It works with these two classes.
+For editing of these two clases...
 
 ```C#
 public class Item
@@ -43,3 +24,50 @@ public class ItemType
     public string TypeName { get; set; }
 }
 ```
+
+
+**ItemDetial.xaml**
+
+```xaml
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lp="clr-namespace:Amporis.Xamarin.Forms.LookupPicker"
+             x:Class="LookupPickerSample.ItemDetial">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Name" />
+            <Entry Text="{Binding Name}" Margin="0,2,0,10" />
+            <Label Text="Type" />
+            <lp:LookupPicker x:Name="lpType" Margin="0,2,0,10" 
+                             ItemDisplayBinding="{Binding TypeName}" 
+                             ItemIdProperty="TypeId" ID="{Binding TypeId}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+```
+
+
+**ItemDetial.xaml.cs**
+
+```C#
+public partial class ItemDetial : ContentPage
+{
+	public ItemDetial()
+	{
+		InitializeComponent();
+  }
+
+  protected async override void OnAppearing()
+  {
+    base.OnAppearing();
+    BindingContext = new Item();
+    lpType.ItemsSource = new [] {
+      new ItemType() { Id = null, TypeName = "" },
+      new ItemType() { Id = 1, TypeName = "Type 1" },
+      new ItemType() { Id = 2, TypeName = "Type 2" },
+      new ItemType() { Id = 3, TypeName = "Type 3" },
+    };
+  }
+```
+
