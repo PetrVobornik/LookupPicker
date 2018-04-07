@@ -1,7 +1,7 @@
 # LookupPicker
 The LookupPicker control extends the standard Picker control about the possibility to show of the names but storing (binding) of the keys. 
 It brings two new properties: **ID** (bindable property which represents a key value of the selected item) and **ItemIdProperty** (name of the key property, e.g. "Id"). 
-It is very useful for editing database data (e.g. by SQLite) with foreign key references.
+It is very useful for editing database data (e.g. by SQLite) with foreign key references, such as LookupComboBox in Delphi.
 
 ## Instalation
 Add a copy of the file LookupPicker.cs into your project (common part). You can also change the namespace in this file.
