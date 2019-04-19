@@ -3,8 +3,11 @@ The LookupPicker control extends the standard Picker control about the possibili
 It brings two new properties: **ID** (bindable property which represents a key value of the selected item) and **ItemIdProperty** (name of the key property, e.g. "Id"). 
 It is very useful for editing database data (e.g. by SQLite) with foreign key references, such as LookupComboBox in Delphi.
 
+## NuGet
+* Available on NuGet: https://www.nuget.org/packages/Amporis.Xamarin.Forms.LookupPicker [![NuGet](https://img.shields.io/nuget/v/Amporis.Xamarin.Forms.LookupPicker.svg?label=NuGet)](https://www.nuget.org/packages/Amporis.Xamarin.Forms.LookupPicker/)
+
 ## Instalation
-Add a copy of the file LookupPicker.cs into your project (common part). You can also change the namespace in this file.
+Instal [NuGet](https://www.nuget.org/packages/Amporis.Xamarin.Forms.LookupPicker) or add a copy of the file [LookupPicker.cs](https://github.com/PetrVobornik/LookupPicker/blob/master/LookupPicker/LookupPicker.cs) into your project (common part). You can also change the namespace in this file.
 
 ## Usage
 
