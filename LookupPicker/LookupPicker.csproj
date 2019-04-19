@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Amporis.Xamarin.Forms.LookupPicker</RootNamespace>
+    <AssemblyName>Amporis.Xamarin.Forms.LookupPicker</AssemblyName>
+    <Authors>Petr Vobornik</Authors>
+    <Company>Amporis, s.r.o.</Company>
+    <Product>LookupPicker</Product>
+    <Copyright>Copyright 2018-2019 Amporis, s.r.o.</Copyright>
+    <PackageProjectUrl>https://github.com/PetrVobornik/LookupPicker</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/PetrVobornik/LookupPicker</RepositoryUrl>
+    <PackageTags>Xamarin Forms Picker Lookup LookupPicker references database foreign key</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReleaseNotes>First NuGet release</PackageReleaseNotes>
+    <Description>The LookupPicker control extends the standard Picker control about the possibility to show of the names but storing (binding) of the keys. It brings two new properties: ID (bindable property which represents a key value of the selected item) and ItemIdProperty (name of the key property, e.g. "Id"). It is very useful for editing database data (e.g. by SQLite) with foreign key references, such as LookupComboBox in Delphi.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIconUrl>https://raw.githubusercontent.com/PetrVobornik/LookupPicker/master/images/lookuppicker-icon.png?raw=true</PackageIconUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.344457" />
+  </ItemGroup>
+
+</Project>
