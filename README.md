@@ -7,7 +7,7 @@ It is very useful for editing database data (e.g. by SQLite) with foreign key re
 * Available on NuGet: https://www.nuget.org/packages/Amporis.Xamarin.Forms.LookupPicker [![NuGet](https://img.shields.io/nuget/v/Amporis.Xamarin.Forms.LookupPicker.svg?label=NuGet)](https://www.nuget.org/packages/Amporis.Xamarin.Forms.LookupPicker/)
 
 ## Instalation
-Instal [NuGet](https://www.nuget.org/packages/Amporis.Xamarin.Forms.LookupPicker) or add a copy of the file [LookupPicker.cs](https://github.com/PetrVobornik/LookupPicker/blob/master/LookupPicker/LookupPicker.cs) into your project (common part). You can also change the namespace in this file.
+Instal [NuGet](https://www.nuget.org/packages/Amporis.Xamarin.Forms.LookupPicker) or add a copy of the file [LookupPicker.cs](https://github.com/PetrVobornik/LookupPicker/blob/master/LookupPicker/LookupPicker.cs) into your Xamarin.Forms .NET Standard project (or to shared project). There is no need to add NuGet to platform specific projects.
 
 ## Usage
 
