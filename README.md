@@ -1,4 +1,4 @@
-# LookupPicker
+# <img src="https://github.com/PetrVobornik/LookupPicker/blob/master/images/lookuppicker-icon.png?raw=true" alt="LookupPicker" width="32" /> Lookup Picker for Xamarin.Forms 
 The LookupPicker control extends the standard Picker control about the possibility to show of the names but storing (binding) of the keys. 
 It brings two new properties: **ID** (bindable property which represents a key value of the selected item) and **ItemIdProperty** (name of the key property, e.g. "Id"). 
 It is very useful for editing database data (e.g. by SQLite) with foreign key references, such as LookupComboBox in Delphi.
